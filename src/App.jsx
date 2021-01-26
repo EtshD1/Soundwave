@@ -1,7 +1,28 @@
 import React from 'react';
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+import "./Styles/main.css";
+import Navbar from "./Navbar";
 
 export default function App(props) {
   return (<>
-    <h1>Soundwave</h1>
+    <BrowserRouter>
+      <Navbar />
+      <main>
+        <Switch>
+          <Route path="/signup">
+            <h1>Signup Page</h1>
+          </Route>
+          <Route path="/discover">
+            <h1>Discover Page</h1>
+          </Route>
+          <Route path="/features">
+            <h1>Features Page</h1>
+          </Route>
+          <Route path="/">
+            <h1>Landing Page</h1>
+          </Route>
+        </Switch>
+      </main>
+    </BrowserRouter>
   </>);
 }

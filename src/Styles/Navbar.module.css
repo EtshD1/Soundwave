@@ -1,0 +1,138 @@
+.headerLogo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000000;
+  z-index: 1;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+.modal.active {
+  pointer-events: all;
+  background-color: #00000036;
+}
+
+.headerLogo img{
+  padding-right: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5rem;
+}
+
+.burger {
+  padding: 5px;
+  padding-right: 0;
+}
+
+.burger div {
+  width: 2rem;
+  border-bottom: 2px solid #fff;
+  padding-top: 6px;
+}
+
+.navbar ul {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  transform: translateX(calc(100% + 1px));
+  transition: 0.3s ease-in-out;
+  background-color: #212D40;
+  flex-direction: column;
+  display: flex;
+  list-style: none;
+  max-width: 500px;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  border-left: 1px solid #fff;
+}
+
+.nav-close > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.nav-close > div::after, .nav-close > div::before {
+  content: "";
+  display: block;
+  width: 35px;
+  padding-bottom: 2px;
+  background-color: #192230;
+  position: absolute;
+}
+
+.nav-close > div::after {
+  transform: rotate(45deg);
+}
+
+.nav-close > div::before {
+  transform: rotate(315deg);
+}
+
+.navbar ul.active {
+  transform: translateX(0%);
+  box-shadow: -1px 0px 15px #000;
+}
+
+.navbar > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.join {
+  font-weight: bold;
+  padding: 5px 25px;
+  background-color: #D66853;
+  border-radius: 6px;
+}
+
+@media (min-width:675px){
+  .burger, .nav-close, .modal {
+    display: none;
+  }
+
+  .navbar {
+    flex-basis: 50%;
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar ul {
+    position: static;
+    transform: translateX(0%);
+    width: auto;
+    height: auto;
+    border: none;
+    flex-direction: row;
+  }
+
+  .navbar ul.active {
+    box-shadow: none;
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import "./Styles/main.css";
 import Navbar from "./Navbar";
+import LandingPage from "./landingPage";
 
 export default function App(props) {
   return (<>
@@ -19,7 +20,7 @@ export default function App(props) {
             <h1>Features Page</h1>
           </Route>
           <Route path="/">
-            <h1>Landing Page</h1>
+            <LandingPage />
           </Route>
         </Switch>
       </main>

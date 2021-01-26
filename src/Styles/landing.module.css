@@ -51,6 +51,10 @@
   align-items: center;
 }
 
+.circle1, .circle2, .circle3 {
+  pointer-events: none;
+}
+
 .circle1 {
   background-color: #D66853;
   position: absolute;

@@ -8,6 +8,7 @@ export default function Discover(props) {
       <div className={Styles.Main}>
         <Content />
         <AlbumShowcase />
+        <BackgroundAesthetic />
       </div>
     </main>
   </>);
@@ -67,4 +68,12 @@ function AlbumShowcase() {
 
 function Album({ url }) {
   return (<div style={{ backgroundImage: `url(${url})` }}></div>);
+}
+
+function BackgroundAesthetic(props) {
+  return (<>
+    <div className={Styles.circle1}></div>
+    <div className={Styles.circle2}></div>
+    <div className={Styles.circle3}></div>
+  </>);
 }

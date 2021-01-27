@@ -104,7 +104,6 @@ main {
   background-color: #763FBC;
   width: 100%;
   height: 100%;
-  position: absolute;
   opacity: 0.1;
   border-radius: 100%;
   z-index: -1;

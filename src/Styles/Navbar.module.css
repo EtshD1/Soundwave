@@ -130,6 +130,7 @@
     height: auto;
     border: none;
     flex-direction: row;
+    background-color: #212D4000;
   }
 
   .navbar ul.active {

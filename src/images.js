@@ -15,7 +15,11 @@ const images = {
   Albums,
   More,
   Charts,
-  Podcasts
+  Podcasts,
+  DivideCover,
+  ForestHillDriveCover,
+  PostTraumaticCover,
+  TrenchCover
 }
 
 export default images

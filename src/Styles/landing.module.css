@@ -1,3 +1,8 @@
+main {
+  animation-name: show;
+  animation-duration: 0.5s;
+}
+
 .lady {
   background-repeat: no-repeat;
   background-size: contain;
@@ -125,4 +130,9 @@
   0% {box-shadow: 0 0 0 #ffffff;}
   50% {box-shadow: 0 0 5px #ffffff;}
   100% {box-shadow: 0 0 0 #ffffff;}
+}
+
+@keyframes show {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

@@ -5,6 +5,8 @@ footer {
   justify-content: center;
   background-color: #232236;
   color: #fff;
+  animation-name: show;
+  animation-duration: 0.5s;
 }
 
 .Container {
@@ -53,4 +55,9 @@ footer {
   .SocialLink div, .Links div, .Links {
     padding: 0;
   }
+}
+
+@keyframes show {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

@@ -1,0 +1,114 @@
+.Icons {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-grow: 3;
+  width: 75%;
+}
+
+.Main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  animation-name: show;
+  animation-duration: 0.5s;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.VisualInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Container > * {
+  padding-bottom: 2rem;
+}
+
+.VisualInfo > div {
+  border-radius: 8px;
+  padding: 0.25rem 0;
+  background-color: #232236;
+  width: 75px;
+  height: 100px;
+  color: #E244BF;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.VisualInfo > div div:last-child {
+  flex: 1;
+}
+
+.Title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.Description {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.Albums {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Albums > div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-grow: 1;
+  flex-basis: 50%;
+  height: 50vw;
+}
+
+.Albums > div:nth-child(2),
+.Albums > div:first-child  {
+  background-position-y: bottom;
+}
+
+.Albums > div:nth-child(3),
+.Albums > div:last-child  {
+  background-position: top;
+}
+
+.Albums > div:nth-child(2n - 1) {
+  background-position-x: right;
+}
+
+.Albums > div:nth-child(2n) {
+  background-position-x: left;
+}
+
+@media (min-width:950px) {
+  .Main {
+    flex-direction: row;
+  }
+
+  .Albums > div {
+    height: 50%;
+  }
+
+  .Container {
+    flex-basis: calc(2 / 3 * 100%);
+    padding-right: 1rem;
+  }
+}
+
+@keyframes show {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

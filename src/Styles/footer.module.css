@@ -1,0 +1,56 @@
+footer {
+  min-height: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #232236;
+  color: #fff;
+}
+
+.Container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 1.125rem;
+}
+
+.Links {
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.SocialLink {
+  align-items: flex-end;
+  font-weight: 700;
+}
+
+.Links, .SocialLink {
+  flex: 0 0 20%;
+  flex-direction: column;
+  min-width: 12rem;
+  display: flex;
+}
+
+.Links div, .SocialLink div {
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.SocialLink div:last-child {
+  padding: 0;
+}
+
+@media (min-width: 675px) {
+  .Container, .SocialLink ,.Links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .SocialLink div, .Links div, .Links {
+    padding: 0;
+  }
+}

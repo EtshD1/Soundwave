@@ -5,11 +5,13 @@ import Styles from "./Styles/landing.module.css";
 
 export default function LandingPage(props) {
   return (<>
-    <div className={Styles.main}>
-      <div style={{ backgroundImage: `url(.${images.Lady})` }} className={Styles.lady}></div>
-      <Content />
-      <BackgroundAesthetic />
-    </div>
+    <main>
+      <div className={Styles.main}>
+        <div style={{ backgroundImage: `url(.${images.Lady})` }} className={Styles.lady}></div>
+        <Content />
+        <BackgroundAesthetic />
+      </div>
+    </main>
   </>);
 }
 

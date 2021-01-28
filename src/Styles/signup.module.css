@@ -65,6 +65,55 @@
   background-color: #D66853;
 }
 
+.circle1, .circle2, .circle3 {
+  pointer-events: none;
+}
+
+.circle1 {
+  background-color: #D66853;
+  position: absolute;
+  padding: 22vmin;
+  opacity: 0.1;
+  border-radius: 100%;
+  z-index: -1;
+  bottom: 10vh;
+  transition: ease 2s;
+}
+
+.circle2 {
+  background-color: #DE278A;
+  position: absolute;
+  padding: 22.5vmin;
+  opacity: 0.1;
+  border-radius: 100%;
+  z-index: -1;
+  top: 15vh;
+  left: 45vw;
+  transition: ease 2s;
+}
+
+.circle3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 40vmin;
+  overflow: hidden;
+}
+
+.circle3::before {
+  position: absolute;
+  left: 20%;
+  content: '';
+  background-color: #763FBC;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  border-radius: 100%;
+  z-index: -1;
+  transition: ease 4s;
+}
+
+
 @media (min-width: 790px) {
   .main {
     flex-direction: row;

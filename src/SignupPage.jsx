@@ -12,6 +12,7 @@ export default function SignUpPage() {
       <div className={Styles.form}>
         <Form />
       </div>
+      <BackgroundAesthetic />
     </main>
   );
 }
@@ -31,4 +32,12 @@ function Form() {
       <input className={Styles.submitBtn} type="submit" value="Join Now" />
     </form>
   );
+}
+
+function BackgroundAesthetic(props) {
+  return (<>
+    <div className={Styles.circle1}></div>
+    <div className={Styles.circle2}></div>
+    <div className={Styles.circle3}></div>
+  </>);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import "./Styles/main.css";
-import { Navbar, LandingPage, DiscoverPage, Footer, Features } from "./Components"
+import { Navbar, LandingPage, DiscoverPage, Footer, Features, SignUpPage } from "./Components"
 
 export default function App(props) {
   return (<>
@@ -9,7 +9,7 @@ export default function App(props) {
       <Navbar />
       <Switch>
         <Route path="/signup">
-          <h1>Signup Page</h1>
+          <SignUpPage />
           <Footer />
         </Route>
         <Route path="/features">

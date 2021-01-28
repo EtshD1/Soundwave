@@ -1,0 +1,51 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: 300px;
+  width: 300px;
+  padding: 1rem 0.25rem;
+  background-color: #232236;
+  border-radius: 20px;
+}
+
+.main {
+  align-items: center;
+}
+
+.lyrics {
+  font-family: Abel;
+  padding: 1rem 0.25rem 0 ;
+  font-size: 0.85rem;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (min-width: 650px) {
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .feature {
+    flex: 0 0 40%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .feature {
+    flex: 0 0 300px;
+  }
+}

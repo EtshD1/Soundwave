@@ -3,11 +3,13 @@ import Styles from "./Styles/signup.module.css";
 
 export default function SignUpPage() {
   return (
-    <main>
-      <div>
-        Join the <span>fun</span>.
+    <main className={Styles.main}>
+      <div className={Styles.callToAction}>
+        <h1>
+          Join the <span>fun</span>.
+        </h1>
       </div>
-      <div>
+      <div className={Styles.form}>
         <Form />
       </div>
     </main>
@@ -16,17 +18,17 @@ export default function SignUpPage() {
 
 function Form() {
   return (
-    <form>
+    <form onSubmit={(e) => e.preventDefault()}>
       <label>Name:
-            <input type="text" placeholder="Mike Tyson" />
+            <input type="text" placeholder="Mike Tyson" required />
       </label>
-      <label>Name:
-            <input type="text" placeholder="Mike Tyson" />
+      <label>Password:
+            <input type="password" placeholder="Not_Mike_Tyson2" required />
       </label>
-      <label>Name:
-            <input type="text" placeholder="Mike Tyson" />
+      <label>Email:
+            <input type="email" placeholder="TheRealMikeTyson@yahoo.com" required />
       </label>
-      <input type="submit" value="Join Now" />
+      <input className={Styles.submitBtn} type="submit" value="Join Now" />
     </form>
   );
 }

@@ -18,7 +18,7 @@ You can learn more about CRA from the [Create React App documentation](https://f
 
 Check out the [React documentation](https://reactjs.org/).
 
-Checkout DevEd [Design A Website In Under 1 Hour With Figma](https://www.youtube.com/watch?v=FK4YusHIIj0).
+Checkout DevEd tutorial: [Design A Website In Under 1 Hour With Figma](https://www.youtube.com/watch?v=FK4YusHIIj0).
 
 Checkout WebDevSimplified tutorial: [Learn How To Build A Website In 1 Hour!](https://www.youtube.com/watch?v=RZ-Oe4_Ew7g).
 

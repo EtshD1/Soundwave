@@ -5,6 +5,7 @@ import images from "./images";
 export default function Features() {
   return (
     <main className={Styles.main}>
+      <BackgroundAesthetic />
 
       <div className={Styles.feature}>
         <div>
@@ -66,4 +67,12 @@ export default function Features() {
 
     </main>
   );
+}
+
+function BackgroundAesthetic(props) {
+  return (<>
+    <div className={Styles.circle1}></div>
+    <div className={Styles.circle2}></div>
+    <div className={Styles.circle3}></div>
+  </>);
 }

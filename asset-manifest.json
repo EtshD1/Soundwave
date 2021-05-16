@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Soundwave/static/css/main.9374a558.chunk.css",
+    "main.js": "/Soundwave/static/js/main.d9cd172d.chunk.js",
+    "main.js.map": "/Soundwave/static/js/main.d9cd172d.chunk.js.map",
+    "runtime-main.js": "/Soundwave/static/js/runtime-main.92f17ffa.js",
+    "runtime-main.js.map": "/Soundwave/static/js/runtime-main.92f17ffa.js.map",
+    "static/js/2.5a9577de.chunk.js": "/Soundwave/static/js/2.5a9577de.chunk.js",
+    "static/js/2.5a9577de.chunk.js.map": "/Soundwave/static/js/2.5a9577de.chunk.js.map",
+    "index.html": "/Soundwave/index.html",
+    "static/css/main.9374a558.chunk.css.map": "/Soundwave/static/css/main.9374a558.chunk.css.map",
+    "static/js/2.5a9577de.chunk.js.LICENSE.txt": "/Soundwave/static/js/2.5a9577de.chunk.js.LICENSE.txt",
+    "static/media/Albums.bfad37b5.svg": "/Soundwave/static/media/Albums.bfad37b5.svg",
+    "static/media/Arrow.56ad3136.svg": "/Soundwave/static/media/Arrow.56ad3136.svg",
+    "static/media/Charts.14f9f66d.svg": "/Soundwave/static/media/Charts.14f9f66d.svg",
+    "static/media/DivideCover.a96cc084.jpg": "/Soundwave/static/media/DivideCover.a96cc084.jpg",
+    "static/media/ForestHillDriveCover.d00746ed.jpg": "/Soundwave/static/media/ForestHillDriveCover.d00746ed.jpg",
+    "static/media/FriendsGroup.f083c586.svg": "/Soundwave/static/media/FriendsGroup.f083c586.svg",
+    "static/media/Logo.96b2bc9b.svg": "/Soundwave/static/media/Logo.96b2bc9b.svg",
+    "static/media/Podcasts.7f4c7d37.svg": "/Soundwave/static/media/Podcasts.7f4c7d37.svg",
+    "static/media/PostTraumaticCover.1c17ea9d.jpg": "/Soundwave/static/media/PostTraumaticCover.1c17ea9d.jpg",
+    "static/media/TrenchCover.00b17ae0.jpg": "/Soundwave/static/media/TrenchCover.00b17ae0.jpg",
+    "static/media/landing-page-lady.9d276ac0.png": "/Soundwave/static/media/landing-page-lady.9d276ac0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92f17ffa.js",
+    "static/js/2.5a9577de.chunk.js",
+    "static/css/main.9374a558.chunk.css",
+    "static/js/main.d9cd172d.chunk.js"
+  ]
+}

@@ -5,7 +5,7 @@ import { Navbar, LandingPage, DiscoverPage, Footer, Features, SignUpPage } from 
 
 export default function App(props) {
   return (<>
-    <BrowserRouter>
+    <BrowserRouter basename="/Soundwave">
       <Navbar />
       <Switch>
         <Route path="/signup">

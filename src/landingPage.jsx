@@ -7,7 +7,7 @@ export default function LandingPage(props) {
   return (<>
     <main>
       <div className={Styles.main}>
-        <div style={{ backgroundImage: `url(.${images.Lady})` }} className={Styles.lady}></div>
+        <div style={{ backgroundImage: `url(${images.Lady})` }} className={Styles.lady}></div>
         <Content />
         <BackgroundAesthetic />
       </div>
